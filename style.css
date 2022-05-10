@@ -3,4 +3,14 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+body {
+  font-family: "Outfit", sans-serif;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.main{
+  border-radius: 15%;
+}
