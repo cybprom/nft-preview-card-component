@@ -5,12 +5,12 @@
   }
 body {
   font-family: "Outfit", sans-serif;
-  padding: 25px;
+  background-color: hsl(217, 54%, 11%);
+}
+ 
+.maincard{
   display: flex;
   justify-content: center;
   align-items: center;
-}
- 
-.main{
-  border-radius: 15%;
+  height: 100vh;
 }
