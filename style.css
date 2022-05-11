@@ -12,5 +12,62 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+  /* margin: 25px; */
+}
+
+.cardimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  /* height: 100vh; */
+  margin: auto;
+  padding: 27px;
+  border-radius: 3%;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.imgequ {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* .imgequ::after {
+  --aqua: hsla(178, 100%, 50%, 0.5);
+
+  content: url(images/icon-view.svg);
+  background: var(--aqua);
+  position: absolute;
+  inset: 0;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  opacity: 0;
+  transition: all 0.25s ease;
+} */
+
+.imgequ img {
+  width: 100%;
+  display: block;
+}
+
+h2, a {
+  margin-top: 10px;
+  padding-top: 5px;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
 }
