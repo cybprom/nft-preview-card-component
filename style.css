@@ -1,20 +1,27 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --aqua: hsla(178, 100%, 50%, 0.5);
+}
+
 * {
-    margin:  0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   background-color: hsl(217, 54%, 11%);
   color: white;
 }
- 
-.maincard{
+
+.maincard {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  /* margin: 0 auto; */
   /* margin: 25px; */
 }
 
@@ -38,36 +45,43 @@ body {
   cursor: pointer;
 }
 
-/* .imgequ::after {
-  --aqua: hsla(178, 100%, 50%, 0.5);
+.imgequ::after {
+  /* --aqua: hsla(178, 100%, 50%, 0.5); */
 
   content: url(images/icon-view.svg);
   background: var(--aqua);
   position: absolute;
   inset: 0;
-  display:         flex;
+  display: flex;
   justify-content: center;
   align-items:     center;
   opacity: 0;
   transition: all 0.25s ease;
-} */
+}
+
+.imgequ:hover::after {
+  opacity: 0.9;
+} 
 
 .imgequ img {
   width: 100%;
   display: block;
 }
 
-h2, a {
+h2,
+a {
   margin-top: 20px;
   padding-top: 5px;
   color: white;
 }
 
-.paragraph, p {
+.paragraph,
+p {
   font-size: 18px;
   color: hsl(0, 0%, 100%);
   margin-top: 25px;
   margin-bottom: 5px;
+  font-weight: 300;
 }
 
 a {
@@ -87,7 +101,8 @@ a {
   margin-top: 0px;
 } */
 
-.cardimg, .pricetags {
+.cardimg,
+.pricetags {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,34 +110,42 @@ a {
   margin-bottom: 24px;
 }
 
-.pricetag, .countdown {
+.pricetag,
+.countdown {
   display: flex;
   align-items: center;
   font-weight: 500px;
   padding-top: 6px;
 }
 
-.pricetags, .pricetag { 
-  color: var(--aqua); 
+.pricetags,
+.pricetag {
+  color: var(--aqua);
 }
 
-.ethicon { 
-  margin-right: 6px;
- }
-
-.countdown { 
-   color: var(--blue-yonder); 
-  }
-
-.clockicon { 
+.ethicon {
   margin-right: 6px;
 }
 
-hr {
+.countdown {
+  color: var(--blue-yonder);
+}
+
+.clockicon {
+  margin-right: 6px;
+}
+
+/* hr {
   margin-bottom: 15px;
+} */
+
+.horizontal-line {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 0.5rem;
+  width: 100%;
 }
 
-.cardfooter{
+.cardfooter {
   display: flex;
   justify-content: wrap;
   align-items: wrap;
@@ -153,7 +176,5 @@ hr {
 }
 
 .authorname a:hover {
-  color: var(--aqua); 
+  color: var(--aqua);
 }
-
-
